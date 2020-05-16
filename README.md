@@ -5,3 +5,5 @@ Currently, the Tanzanian Health Ministry does not have a way to track citizens w
 The database needs to store primary information on civilians, test results, covid certificates. 
 The application needs to support a User Interface where government officials can input test results and register civilians.
 Data needs to be encrypted.
+
+Application also needs to support notification feature: send emails to civilians with their test results.
