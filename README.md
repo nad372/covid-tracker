@@ -1,5 +1,5 @@
 # covid-tracker
-Currently, the Tanzanian Health Ministry does not have a way to track citizens with covid. The ministry will start public testing, but need a database to store information on invdiduals who are tested and their test results. Test results are valid for 2 weeks and individuals will need to be re-tested on expiry.
+Currently, the Tanzanian Health Ministry does not have a way to track citizens with covid. The ministry will start public testing, but need a system to schedule appointments, store information on invdiduals who are tested and their test results in encrypted database. Test results are valid for 2 weeks and individuals will need to be re-tested on expiry.
 
 
 The database needs to store primary information on civilians, test results, covid certificates. 
