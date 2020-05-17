@@ -6,4 +6,10 @@ The database needs to store primary information on civilians, test results, covi
 The application needs to support a User Interface where government officials can input test results and register civilians.
 Data needs to be encrypted.
 
-Application also needs to support notification feature: send emails to civilians with their test results.
+
+Specifications
+- Support appointment booking for individuals/companies to get tested at lab center.
+- Prioritize testing date based on time of travel
+- Means to send test results back to inidviduals - email
+- User form to fill out details of patient and test result
+- Certificate Scanning
