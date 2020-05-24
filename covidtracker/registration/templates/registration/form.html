@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+<nav class="navbar navbar-inverse">
+<div class ="container-fluid">
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+
+    </button>
+    <a class="navbar-brand">Covid Registration</a>
+    <a class="navbar-brand">Employer Registration</a>
+    <a class="navbar-brand">Certification</a>
+
+    <a class="navbar-brand">Contact</a>
+</div>
+</div>
+</nav>
+<form>
+    <h3> Record Number </h3>
+    <lablel>First Name</lablel>
+    <select name="person" id="person">
+        {% if all_people %}
+        {% for person in all_people %}
+            <option value = "person">{{ person.firstName }}</option>
+        {% endfor %}
+    {% endif %}
+    </select>
+    <lablel>Last Name</lablel>
+    <select name="person" id="person">
+        {% if all_people %}
+        {% for person in all_people %}
+            <option value = "person">{{ person.lastName }}</option>
+        {% endfor %}
+    {% endif %}
+    </select>    
+    <lablel>Passport Number</lablel>
+    <select name="person" id="person">
+        {% if all_people %}
+        {% for person in all_people %}
+            <option value = "person">{{ person.passportNumber }}</option>
+        {% endfor %}
+    {% endif %}
+    </select>   
+    <label>Employer</label>
+    <select name="employer" id="employer">
+    {% if all_employers %}
+        {% for employer in all_employers %}
+            <option value = >{{ employer.employerName }}</option>
+        {% endfor %}
+    {% endif %}
+    </select>
+    <lablel>Result</lablel>
+    <select name="result" id="result">
+        <option value="negative">Negative</option>
+        <option value="positive">Postive</option>
+      </select>
+
+    <button>Save</button>
+</form>
