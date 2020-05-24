@@ -17,6 +17,6 @@ def index(request):
 
     return HttpResponse(template.render(context, request))
 
-def getBookings(request):
+# def getBookings(request):
     
 

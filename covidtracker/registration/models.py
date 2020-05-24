@@ -25,8 +25,9 @@ class Certificate(models.Model):
 class Employer(models.Model):
     employerName = models.CharField(max_length=300)
     employerEmail = models.CharField(max_length=300)
+
 class Booking(models.Model):
-    id = models.IntegerField()
+    # id = models.IntegerField()
     recordDate = models.DateField()
     unitID= models.IntegerField()
     client = models.CharField(max_length=300)
