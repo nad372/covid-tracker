@@ -36,6 +36,9 @@ class Booking(models.Model):
     event = models.CharField(max_length=300)
     code = models.CharField(max_length=300)
     startDate = models.DateField()
+    firstName = models.CharField(max_length=300)
+    lastName = models.CharField(max_length=300)
+    passportNumber = models.CharField(max_length=250) 
 
     
 
