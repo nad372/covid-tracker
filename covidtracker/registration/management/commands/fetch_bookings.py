@@ -153,7 +153,7 @@ class BookingsFetcher:
             writer = csv.writer(csvfile, delimiter='')
             writer.writerow([''])
 
-    def fetch(self, make_excel):
+    def fetch(self, make_excel=False):
         admin_token = self.get_user_token(COMPANY_LOGIN, USER_LOGIN, USER_PASSWORD)
         admin_client = self.get_admin_client(COMPANY_LOGIN, admin_token)
         all_bookings = admin_client.getBookings([]).data.result
