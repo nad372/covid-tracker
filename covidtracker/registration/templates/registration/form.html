@@ -22,41 +22,35 @@
 </div>
 </div>
 </nav>
+{% if all_bookings %}
+{% for booking in all_bookings %}
 <form>
     <h3> Record Number </h3>
-    <lablel>First Name</lablel>
+    <label>Code</label>
     <select name="person" id="person">
-        {% if all_people %}
-        {% for person in all_people %}
-            <option value = "person">{{ person.firstName }}</option>
-        {% endfor %}
-    {% endif %}
+            <option value = "person">{{ booking.code }}</option>
     </select>
-    <lablel>Last Name</lablel>
+    <label>Record Date</label>
     <select name="person" id="person">
-        {% if all_people %}
-        {% for person in all_people %}
-            <option value = "person">{{ person.lastName }}</option>
-        {% endfor %}
-    {% endif %}
+            <option value = "person">{{ booking.recordDate }}</option>
+    </select>
+    <label>First Name</label>
+    <select name="person" id="person">
+            <option value = "person">{{ booking.firstName }}</option>
+    </select>
+    <label>Last Name</label>
+    <select name="person" id="person">
+            <option value = "person">{{ booking.lastName }}</option>
     </select>    
-    <lablel>Passport Number</lablel>
+    <label>Passport Number</label>
     <select name="person" id="person">
-        {% if all_people %}
-        {% for person in all_people %}
-            <option value = "person">{{ person.passportNumber }}</option>
-        {% endfor %}
-    {% endif %}
+            <option value = "person">{{ booking.passportNumber }}</option>
     </select>   
     <label>Employer</label>
     <select name="employer" id="employer">
-    {% if all_employers %}
-        {% for employer in all_employers %}
-            <option value = >{{ employer.employerName }}</option>
-        {% endfor %}
-    {% endif %}
+            <option value = >{{ booking.client }}</option>
     </select>
-    <lablel>Result</lablel>
+    <label>Result</label>
     <select name="result" id="result">
         <option value="negative">Negative</option>
         <option value="positive">Postive</option>
@@ -64,3 +58,5 @@
 
     <button>Save</button>
 </form>
+{% endfor %}
+{% endif %}
